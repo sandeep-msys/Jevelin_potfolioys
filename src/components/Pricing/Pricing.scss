@@ -1,0 +1,229 @@
+.pricing-container {
+    // border: 1px solid red;
+    padding: 20% 0%;
+    background-color: black;
+    color: white;
+    text-align: start;
+    background-image: url('http://jevelin.shufflehound.com/mobile-app-2/wp-content/uploads/sites/40/2019/11/Rectangle-2-copy-4.jpg?id=133');
+
+    .pricing-title-container {
+        padding: 5%;
+        // border: 1px solid red;
+        font-size: 36px;
+
+        .pricing-heading {
+            margin: 0%;
+            // border: 1px solid red;
+            font-size: 0.8em;
+        }
+
+        .pricing-sub-heading {
+            // border: 1px solid red;
+            font-size: 1.2em;
+            margin-bottom: 15%;
+
+        }
+    }
+
+    .pricing-cards-container {
+        font-size: 30px;
+        // border: 1px solid red;
+        padding: 5%;
+
+        #basicCard,
+        #premiumCard {
+            visibility: hidden;
+            animation-timing-function: linear;
+            animation-iteration-count: 1;
+        }
+
+        @keyframes blurAnimate {
+            0% {
+                opacity: 0.3;
+            }
+
+            50% {
+                opacity: 0.6;
+            }
+
+            100% {
+                opacity: 1;
+            }
+
+        }
+
+        .each-pricing-card-container {
+            text-align: center;
+            margin: 5% 0%;
+            padding: 15% 5%;
+            border-radius: 20px;
+            // border: 1px solid red;
+            background-color: white;
+            color: black;
+
+            .each-pricing-heading {
+                // border: 1px solid red;
+                color: #959595;
+                font-size: 0.8em;
+                margin-bottom: 4%;
+            }
+
+
+            .each-pricing-sub-heading {
+                // border: 1px solid red;
+                font-size: 2.4em;
+                margin: 2% 0%;
+
+            }
+
+            .highlight-heading {
+                background-color: #01d679;
+                color: white;
+                display: inline;
+
+            }
+
+            .each-pricing-time-period {
+                // border: 1px solid red;
+                color: #acacac;
+                font-size: 0.6em;
+
+            }
+
+            .each-pricing-button {
+                // border: 2px solid red;
+                background-color: white;
+                padding: 7% 22%;
+                color: #01d679;
+                font-size: 0.6em;
+                border-radius: 20px;
+
+            }
+            .each-pricing-button:hover {
+                cursor: pointer;
+                color: #01d679;
+                background-color: white;
+                transition-duration: 0.7s;
+            }
+
+            .highlight-button {
+                background-color: black;
+                color: white;
+                font-weight: 600;
+            }
+
+            .pricing-offer {
+                // border: 1px solid red;
+                font-size: 0.5em;
+                color: #111;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width:425px) {
+    .pricing-container {
+        padding: 10% 0%;
+
+        .pricing-title-container {
+            padding-bottom: 0%;
+
+            .pricing-sub-heading {
+                font-size: 1em;
+            }
+        }
+
+        .pricing-cards-container {
+            .each-pricing-card-container {
+                .each-pricing-button {
+                    padding: 6% 20%;
+                    border-radius: 25px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width:768px) {
+    .pricing-container {
+        padding: 0%;
+
+        .pricing-title-container {
+            .pricing-sub-heading {
+                width: 60%;
+                margin-bottom: 5%;
+            }
+        }
+
+        .pricing-cards-container {
+            .each-pricing-card-container {
+                width: 50%;
+                margin: 10% auto;
+                padding: 5% 3%;
+
+                .each-pricing-button {
+                    padding: 5% 27%;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+@media only screen and (min-width:1024px) {
+    .pricing-container {
+        padding: 0%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .pricing-title-container {
+            width: 30%;
+
+            .pricing-sub-heading {
+                width: 60%;
+                margin-bottom: 5%;
+            }
+        }
+
+        .pricing-cards-container {
+            padding: 4% 0%;
+            width: 60%;
+            display: flex;
+            justify-content: space-between;
+
+            .each-pricing-card-container {
+                width: 35%;
+                margin: 10% auto;
+                padding: 5% 3%;
+
+                .each-pricing-button {
+                    padding: 5% 27%;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width:1366px) {
+    .pricing-container {
+        padding: 5%;
+        align-items: flex-start;
+
+        .pricing-title-container {
+            .pricing-sub-heading {
+                width: 80%;
+            }
+        }
+
+        .pricing-cards-container {
+            padding-top: 0%;
+
+            .each-pricing-card-container {
+                margin-bottom: 0%;
+            }
+        }
+    }
+}

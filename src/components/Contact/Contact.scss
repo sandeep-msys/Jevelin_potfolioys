@@ -1,0 +1,88 @@
+.contact-container {
+    background-image: url('https://jevelin.shufflehound.com/mobile-app-2/wp-content/uploads/sites/40/2019/11/Polygon-1-copy-15.jpg?id=134');
+    background-size: cover;
+    background-position: center center;
+    color: white;
+    font-size: 30px;
+padding: 10%;
+    .contact-title-container {
+
+        .contact-heading {
+            font-size: 1em;
+            margin: 0%;
+        }
+
+        .contact-sub-heading {
+            font-size: 1.1em;
+            margin:0%;
+        }
+
+        .contact-button {
+            padding: 7% 15%;
+            font-size: 0.8em;
+            background-color: transparent;
+            color: white;
+            margin: 10% auto;
+            border:1px solid white;
+            display: flex;
+            border-radius: 22px;
+               flex-direction: row;
+               justify-content: space-between;
+               align-items: center;
+            .chat-icon{
+               margin-right: 14px;
+            }
+        }
+        .contact-button:hover {
+            cursor: pointer;
+            color: #01d679;
+            background-color: white;
+            transition-duration: 0.7s;
+        }
+    }
+}
+
+@media only screen and (min-width:425px) {
+    .contact-container{
+        .contact-title-container{
+            .contact-sub-heading{
+                width: 72%;
+                margin: 5% auto;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width:768px) {
+    .contact-container{
+        .contact-title-container{
+            .contact-sub-heading{
+                width: 80%;
+                
+            }
+            .contact-button{
+                padding: 5% 20%;
+                margin-bottom: 0%;
+                border-radius: 40px;
+                font-size: 30px;
+            }
+        }
+    }
+}
+@media only screen and (min-width:1366px) {
+    .contact-container{
+        .contact-title-container{
+            .contact-sub-heading{
+                text-align: center;
+                margin: auto;
+                font-size: 40px;
+                width: 50%;
+                
+            }
+            .contact-button{
+              margin-top: 5%;
+              padding: 2% 10%;
+            }
+        }
+    }
+}

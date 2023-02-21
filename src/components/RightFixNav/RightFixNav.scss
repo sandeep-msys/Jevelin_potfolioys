@@ -1,0 +1,56 @@
+.RightFixNav-container {
+    display: none;
+    position: fixed;
+    top: 125px;
+    z-index: 1;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: white;
+    height: 52vh;
+    width: 3.8%;
+    margin-left: 95.5%;
+
+    .icons-container {
+        .each-icon-container:hover {
+            cursor: pointer;
+            background-color: rgb(244, 247, 248);
+            .icon {
+                color: rgb(6, 176, 233);
+            }
+        }
+
+        .each-icon-container {
+            .icon {
+                font-size: 25px;
+                padding: 25%;
+                border-top: 0.5px solid #e6e4e4;
+                color: #8a8a8a;
+            }
+        }
+
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .RightFixNav-container {
+        display: block;
+        top: 160px;
+        height: auto;
+        width: 5%;
+    }
+}
+
+@media only screen and (min-width: 1366px) {
+    .RightFixNav-container {
+        width: 3.8%;
+        margin-left: 95.9%;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .RightFixNav-container {
+        top: 225px;
+        width: 3.8%;
+        margin-left: 95.5%;
+    }
+}

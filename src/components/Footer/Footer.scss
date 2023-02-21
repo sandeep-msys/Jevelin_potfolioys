@@ -1,0 +1,136 @@
+.footer-container {
+    // border: 1px solid red;
+    padding: 20% 5%;
+    text-align: start;
+    font-size: 20px;
+
+    .footer-title-container {
+        margin-bottom: 5%;
+
+        .footer-title-matter {
+            // border: 1px solid red;
+            font-size: 0.6em;
+
+            .footer-highlight {
+                // border: 1px solid red;
+                color: #02ca72;
+            }
+        }
+
+        .footer-social-container {
+            // border: 1px solid red;
+            width: 30%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .footer-social-icon {
+                // border: 1px solid red;
+                font-size: 0.7em;
+            }
+        }
+    }
+
+    .footer-service-container {
+        // border: 1px solid red;
+        font-size: 0.9em;
+
+        .footer-service-title {
+            // border: 1px solid red;
+            color: #111;
+            font-weight: bold;
+        }
+
+        .each-footer-service {
+            // border: 1px solid red;
+            color: #83868e;
+            margin: 3% 0%;
+        }
+    }
+
+    .footer-contact-container {
+        // border: 1px solid red;
+
+        .footer-contact-title {
+            // border: 1px solid red;
+            font-size: 16px;
+            color: #111;
+            font-weight: bold;
+
+        }
+
+        .each-footer-contact-address {
+            // border: 1px solid red;
+            margin: 3% 0%;
+            font-size: 13px;
+            font-weight: bold;
+        }
+    }
+}
+
+
+@media only screen and (min-width:425px) {
+    .footer-container {
+        padding: 20% 15%;
+    }
+}
+
+@media only screen and (min-width:768px) {
+    .footer-container {
+        padding: 17% 12%;
+
+        .footer-title-container {
+            .footer-social-container {
+                width: 20%;
+            }
+        }
+    }
+}
+
+
+@media only screen and (min-width:1024px) {
+    .footer-container {
+        padding: 8%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        .footer-title-container {
+            width: 22%;
+
+            .footer-social-container {
+                margin-top: 10%;
+                width: 50%;
+            }
+        }
+
+        .footer-service-container {
+            .footer-service-title {
+                margin-top: 0%;
+            }
+        }
+
+        .footer-contact-container {
+            .footer-contact-title {
+                margin-top: 0%;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width:1366px) {
+    .footer-container {
+        padding: 5% 13%;
+
+        .footer-title-container {
+            .footer-social-container {
+                width: 34%;
+            }
+        }
+        .footer-contact-container{
+            .footer-contact-title{
+               font-size: 13px;
+            }
+        }
+    }
+}

@@ -1,0 +1,220 @@
+.navbar-container {
+    padding: 10% 0%;
+    color: black;
+    background: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    background-color: white;
+    border-bottom: 1px solid rgb(230, 227, 227);
+
+    .navbar-title-container {
+
+        // border: 1px solid red;
+
+        .navbar-title-image {
+            width: 90%;
+        }
+    }
+
+    .hidden-nav {
+        color: #aaaaaa;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        background-color: #232323;
+        top: 80px;
+        width: 100%;
+        // height: 80vh;
+
+        .hidden-menu-option {
+            padding-left: 4px;
+            border-bottom: 1px solid rgb(58, 57, 57);
+            text-decoration: none;
+            color: #aaaaaa;
+            text-align: start;
+            margin-top: 8%;
+        }
+
+        .navbar-menu-button {
+            margin-top: 10px;
+            width: 120px;
+            height: 50px;
+            background-color: blue;
+            color: white;
+            border-color: transparent;
+            border-radius: 4px;
+        }
+
+        .navbar-search {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            font-size: 25px;
+        }
+
+        .hidden-social-icons-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 6%;
+            border: #424141 1px solid;
+
+            .hidden-social-icon {
+                font-size: 25px;
+                margin: auto;
+            }
+        }
+
+    }
+
+    .navbar-hamburger-icon {
+        font-size: 30px;
+        // border: 1px solid red;
+        // color: red;
+        margin-right: 5%;
+    }
+
+    .navbar-menu-container {
+        display: none;
+    }
+
+    .cross-icon {
+        margin-right: 5%;
+        font-size: 30px;
+    }
+
+}
+
+@media only screen and (min-width: 425px) {
+    .navbar-container {
+        padding: 5%;
+
+        .hidden-nav {
+            top: 75px;
+            width: 82%;
+        }
+
+        .cross-icon {
+            margin-right: 15%;
+        }
+
+        .navbar-hamburger-icon {
+            margin-right: 15%;
+        }
+    }
+
+}
+
+
+@media only screen and (min-width: 768px) {
+    .navbar-container {
+        padding: 5%;
+
+        .hidden-nav {
+            top: 110px;
+            width: 82%;
+        }
+
+        .navbar-hamburger-icon {
+            margin-right: 15%;
+        }
+
+    }
+
+}
+
+@media only screen and (min-width: 1024px) {
+    .navbar-container {
+        .hidden-nav {
+            top: 135px;
+            width: 82%;
+
+            .hidden-menu-option {
+                margin-top: 2%;
+            }
+
+            .navbar-search {
+                margin: 0%;
+            }
+
+            .hidden-social-icons-container {
+                padding: 1%;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1366px) {
+
+    .navbar-container {
+        // border: 1px solid red;
+        padding: 1% 0%;
+
+        .cross-icon {
+            display: none;
+        }
+
+        .hidden-nav {
+            display: none;
+        }
+
+        .navbar-hamburger-icon {
+            display: none;
+        }
+
+        .navbar-menu-container {
+            display: flex;
+            // border: 1px solid red;
+            justify-content: space-evenly;
+            width: 35%;
+
+            .navbar-menu-options-container {
+                // border: 1px solid red;
+                display: flex;
+                width: 50%;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+
+                .each-menu-option {
+                    text-decoration: none;
+                    color: black;
+                    font-size: 12px;
+                }
+
+                .each-menu-option:hover {
+                    color: #01d679;
+                }
+            }
+
+            .green-button {
+                background-color: #01d679;
+                color: white;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 2% 4%;
+                border-radius: 13px;
+                border-width: 0px;
+                font-size: 14px;
+
+                .button-icon {
+                    font-size: 22px;
+                    margin-right: 6px;
+                }
+            }
+
+            .green-button:hover {
+                cursor: pointer;
+                background-color: black;
+                transition-duration: 0.7s;
+            }
+        }
+    }
+}

@@ -1,0 +1,192 @@
+.feature-container {
+    // border: 1px solid red;
+    padding: 15% 5%;
+// #schedule{
+//     background-image: url('https://jevelin.shufflehound.com/mobile-app-2/wp-content/uploads/sites/40/2019/11/Polygon-1-copy-10.jpg?id=135');
+//     background-size: contain;
+
+// }
+// #plant{
+//     background-image: url('https://jevelin.shufflehound.com/mobile-app-2/wp-content/uploads/sites/40/2019/11/Polygon-1-copy-22-1jpg?id=130');
+//     background-size: 50% no-repeat;
+//     background-position: center;
+
+// }
+// #schedule{
+//     background-image: url('https://jevelin.shufflehound.com/mobile-app-2/wp-content/uploads/sites/40/2019/11/Polygon-1-copy-10.jpg?id=135');
+//     background-size: contain;
+
+// }
+    .each-feature-container {
+        // border: 1px solid red;
+overflow: hidden;
+        .each-feature-matter-container {
+            // border: 1px solid red;
+            font-size: 40px;
+            padding: 10% 0%;
+
+            .each-feature-heading {
+                // border: 1px solid red;
+                color: #c2c2c2;
+                font-size: 0.8em;
+                text-align: start;
+
+            }
+
+            .each-feature-sub-heading {
+                // border: 1px solid red;
+                color: #111111;
+                font-size: 1em;
+                text-align: start;
+            }
+
+            .each-feature-matter {
+                color: #555;
+                font-size: 0.5em;
+                text-align: start;
+            }
+
+            .each-feature-highlight-container {
+                // border: 1px solid red;
+                text-align: start;
+
+                .highlight-bell-icon {
+                    // border: 1px solid red;
+                    color: #01d679;
+                    background-color: #cff3e3;
+                    height: 30px;
+                    width: 30px;
+                    padding: 5%;
+                    border-radius: 15px;
+
+                }
+
+                .highlight-calender-icon {
+                    // border: 1px solid red;
+                    color: #ffba00;
+                    height: 30px;
+                    width: 30px;
+                    padding: 5%;
+                    border-radius: 15px;
+                    background-color: #ffeed2;
+
+                }
+
+                .highlight-matter {
+                    color: #111111;
+                    font-size: 0.5em;
+                    // border: 1px solid red;
+                    margin-top: 0%;
+                }
+            }
+        }
+    }
+    .reverse{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .each-feature-image-container {
+        // border: 1px solid red;
+
+        .each-feature-image {
+            // border: 1px solid red;
+            width: 100%;
+        }
+    }
+}
+
+@media only screen and (min-width:768px) {
+    .feature-container {
+        .each-feature-container {
+            .each-feature-matter-container {
+                width: 93%;
+               
+                .each-feature-heading{
+                    margin: 0%;
+                }
+                .each-feature-matter{
+                    margin: 0%;
+                }
+            }
+        }
+    }
+
+}
+
+@media only screen and (min-width:1024px) {
+    .feature-container {
+        padding: 10% 2%;
+
+        .each-feature-container {
+            display: flex;
+            flex-direction: reverse;
+            justify-content: space-between;
+            align-items: center;
+
+            .each-feature-matter-container {
+                width: 50%;
+                padding: 0%;
+
+              
+            }
+
+            .each-feature-image-container {
+                width: 50%;
+                margin: auto;
+
+                .each-feature-image {
+                    width: 65%;
+                    height: 75%;
+                }
+            }
+        }
+        .reverse{
+            flex-direction: row;
+        }
+    }
+
+}
+
+@media only screen and (min-width:1366px) {
+    .feature-container {
+        padding: 10% 2%;
+
+        .each-feature-container {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            align-items: center;
+
+            .each-feature-matter-container {
+                width: 40%;
+                margin: auto;
+                padding: 0%;
+
+                .each-feature-sub-heading {
+                    font-size: 1.2em;
+                }
+
+                .each-feature-matter {
+                    margin-bottom: 0%;
+                }
+                .each-feature-highlight-container{
+                    width: 70%;
+                    margin-bottom: 5%;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    .highlight-matter{
+                        width: 70%;
+                        margin: 0%;
+                        font-size: 18px;
+                    }
+                }
+            }
+
+            .each-feature-image-container {
+                width: 40%;
+            }
+        }
+    }
+
+}

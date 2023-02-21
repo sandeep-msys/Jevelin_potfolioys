@@ -1,0 +1,197 @@
+.about-container {
+    background-image: url('https://jevelin.shufflehound.com/mobile-app-2/wp-content/uploads/sites/40/2019/11/BG2.jpg?id=226');
+    background-size: cover;
+    padding-top: 15% 8%;
+    // margin-top: 30%;
+   position: relative;
+   top: 96px;
+
+    .about-title-container {
+        // border: 1px solid red;
+
+        .about-title-heading {
+            // border: 1px solid red;
+            color: #c2c2c2;
+            font-size: 30px;
+            margin: auto;
+        }
+
+        .about-title-sub-heading {
+            // border: 1px solid red;
+            color: #111111;
+            font-size: 42px;
+            margin: auto;
+            line-height: 50px;
+            margin-top: 20px;
+        }
+
+        .about-title-button {
+            border-width: 0px;
+            margin: 16% auto;
+
+            .about-title-button-icon {
+                font-size: 18px;
+                margin-right: 10px;
+            }
+
+            background-color: #01d679;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 7% 13%;
+            border-radius: 20px;
+            border-width: 0px;
+            font-size: 16px;
+            font-weight: bold;
+
+        }
+
+        .about-title-button:hover {
+            cursor: pointer;
+            background-color: black;
+            transition-duration: 0.7s;
+        }
+    }
+
+    .about-image-container {
+        // border: 1px solid red;
+        padding: 15% 0%;
+
+        .about-image {
+            width: 100%;
+        }
+    }
+
+}
+
+@media only screen and (min-width: 425px) {
+
+    .about-container {
+        padding: 8% 6%;
+        top: 75px;
+
+        .about-title-container {
+            .about-title-sub-heading {
+                width: 360px;
+            }
+
+            .about-title-button {
+                margin-top: 40px;
+                padding: 20px 40px;
+            }
+        }
+
+        .about-image-container {
+            padding: 0%;
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+
+    .about-container {
+        padding: 8% 6%;
+        top:105px;
+        margin-top: 0%;
+
+        .about-title-container {
+            .about-title-sub-heading {
+                margin: auto;
+            }
+
+            .about-title-button {
+                padding: 3% 6%;
+                margin: auto;
+                margin-top: 10%;
+            }
+        }
+
+        .about-image-container {
+            padding: 0%;
+
+            .about-image {
+                width: 80%;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .about-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+top: 140px;
+        .about-title-container {
+            margin-top: 10%;
+            width: 40%;
+            text-align: start;
+
+            .about-title-heading {
+                text-align: start;
+            }
+
+            .about-title-sub-heading {
+                text-align: start;
+                margin: 5% 0%;
+                width: 350px;
+
+
+            }
+
+            .about-title-button {
+                text-align: start;
+                margin: auto 0%;
+                padding: 5% 8%;
+            }
+        }
+
+        .about-image-container {
+            width: 50%;
+
+            .about-image {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1336px) {
+    .about-container {
+        padding: 0% 3%;
+top: 30px;
+
+        .about-title-container {
+
+            .about-title-sub-heading {
+                width: 85%;
+            }
+
+            .about-title-button {
+                padding: 3%;
+                margin-top: 7%;
+
+            }
+        }
+
+        .about-image-container {
+            width: 50%;
+
+            .about-image {
+                width: 82%;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .about-container {
+        .about-title-container {
+            .about-title-sub-heading {
+                line-height: 130%;
+                font-size: 60px;
+            }
+        }
+    }
+}
